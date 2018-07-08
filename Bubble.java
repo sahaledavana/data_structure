@@ -69,6 +69,8 @@ class Bubble
         a = new int[n];
         a = ob.insert(a,n);
         a = ob.sort(a, n);
+
+        //sahal
         ob.display(a,n);
 
 
