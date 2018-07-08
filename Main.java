@@ -8,8 +8,8 @@ class Main
     public static void main(String args[])
     {
 
-        Bubblesort ob;
-        ob = new Bubblesort();
+        Sort ob;
+        ob = new Sort();
         Scanner scan = new Scanner(System.in);
         System.out.println("enter the size");
         int n,b;
@@ -17,7 +17,7 @@ class Main
         n = scan.nextInt();
         a = new int[n];
         a = ob.insert(a,n);
-        a = ob.sort(a, n);
+        a = ob.mergesort(a, 0 , n-1);
 
         //sahal
         ob.display(a,n);
